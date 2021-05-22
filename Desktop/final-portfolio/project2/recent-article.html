@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <!-- Font Awesome -->
+	    <script src="https://kit.fontawesome.com/cd075ba03a.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://d3js.org/d3.v4.js"></script>
+    </head>
+    <body> 
+        <header>
+            <div class="container container-flex">
+                <div class="site-title">
+                    <h1>MDMA-assited therapy for severe PTSD Article - reformatted</h1>
+                    <p class="subtitle">Visualizing data using scientific article</p>
+                </div>
+                <nav>
+                     <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../bronx.html">Bronx</a></li>
+                        <li><a href="recent-article.html">MDMA</a></li>
+                    </ul> 
+                </nav>
+            </div> <!-- / .container -->
+        </header>
+        
+        <div class="container container-flex">
+            <main role="main">
+                <img src="../img/image-from-the-nyt.jpg" class="image-full">
+                <h2>MDMA-assisted therapy for severe PTSD: a randomized, double-blind, placebo-controlled phase 3 study</h2>
+
+                <h2>What is PTSD?</h2>
+                <p>PTSD is a common and debilitating condition with immeasurable social and economic costs that affects the lives of hundreds of millions of people annually. There are a number of environmental and biological risk factors that contribute to the development and maintenance of PTSD1, and poor PTSD treatment outcomes are associated with several comorbid conditions that include childhood trauma2, alcohol and substance use disorders3, depression4, suicidal ideation5 and dissociation6. It is therefore imperative to identify a therapeutic that is beneficial in those individuals with the comorbidities that typically confer treatment resistance.</p>
+
+                <h2 id="demographics"> Demographics and baseline characteristics</h2>
+                
+                <h3>Race</h3>
+                <p>The study had a total of 90 participants. The participants were divided in two groups. those who had MDMA assisted therapy and those on a placebo session. </p>
+                
+                <p> One of the several limitations in gathering participats was due to the coronavirus disease pandemic. The population therefore lacks racial and ethic diversity. </p>
+
+                
+
+                <p></p>
+                
+                 <!-- Inserting Graph #1 here-->
+                 
+                    <!-- Add 2 buttons -->
+              
+                    <button onclick="update(data1)">MDMA</button>
+                    <button onclick="update(data2)">Placebo</button>
+                    <button onclick="update(data3)">Total</button>
+
+                    <div id="gender_viz"></div>
+                    <script src="barplot.js"></script>
+
+                    <!-- Create a div where the graph will take place -->
+                     
+                    
+            
+                <h3 id="benefits">Prior Therapy</h3>
+                <p>Prior to taking MDMA assited therapy, many had taken a combination of different therapy styles. </p>
+                <p>Further on in the article we are able to read that MDMA therapy was effective in the reduction of depression symptons. Overall, three dose of MDMA given in conjunction with therapy over 18 weeks results in the reduction of PTSD symptons and function impairments.</p>
+                <script src="https://d3js.org/d3.v6.min.js"></script>
+          
+                <div id="dataviz"></div>
+                <script src="lolipop.js"></script>
+
+                
+                <h3 id="discussion">Discussion</h3>
+                <p>In summary, MDMA-assisted therapy induces rapid onset of 
+                    treatment efficacy, even in those with severe PTSD, and in those 
+                    with associated comorbidities including dissociative PTSD, depression, history of alcohol and substance use disorders, and childhood 
+                    trauma. Not only is MDMA-assisted therapy efficacious in individuals with severe PTSD, but it may also provide improved patient 
+                    safety. Compared with current first-line pharmacological and 
+                    behavioral therapies, MDMA-assisted therapy has the potential to 
+                    dramatically transform treatment for PTSD and should be expeditiously evaluated for clinical use.</p>
+                <p>In summary, MDMA-assisted therapy induces rapid onset of 
+                    treatment efficacy, even in those with severe PTSD, and in those 
+                    with associated comorbidities including dissociative PTSD, depression, history of alcohol and substance use disorders, and childhood 
+                    trauma. Not only is MDMA-assisted therapy efficacious in individuals with severe PTSD, but it may also provide improved patient 
+                    safety. Compared with current first-line pharmacological and 
+                    behavioral therapies, MDMA-assisted therapy has the potential to 
+                    dramatically transform treatment for PTSD and should be expeditiously evaluated for clinical use.</p>
+
+            
+            </main>
+            
+<!-- adding my javascrit lines here-->
+           
+           
+           
+            
+            <aside class="sidebar">
+                
+              
+            <!-- Need this to sticky behavior-->
+                <div class="sidebar-widget side-nav">
+                    <h2 class="widget-title">Data</h2>
+                    <div class="widget-recent-post">
+                        <i  class="fa-2x fas fa-users icons"></i>
+                        <h3 class="widget-recent-post-title"><a href="#demographics">Race</a></h3>
+                       
+                        
+                    </div>
+                    <div class="widget-recent-post">
+                        <i  class="fa-2x fas fa-poll icons"></i>
+                        <h3 class="widget-recent-post-title"><a href="#benefits">Prior Therapy </a></h3>
+                        
+                    </div>
+                    
+                </div>
+                
+            </aside>
+            
+        </div>
+        
+        
+        <footer>
+            <p><strong> <a href="https://rdcu.be/ckKCh">View the Original Article</a> </strong></p>
+            <p>May 2021</p>
+        </footer>
+
+        <script type="text/javascript" src="../lib/d3.js"></script>
+        <script type="text/javascript" src="../lib/d3.min.js"></script>
+        
+    </body>
+</html>

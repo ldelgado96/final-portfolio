@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Interactive Data Visualization Tutorial</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+  </head>
+  <body>
+    <div class="top-section">
+    <h1>Where to eat in the Bronx?</h1>
+      <p>Support restaurants in the Bronx that are open for outdoor dining.</p>
+    </div>
+    
+        <!-- all we need is an element to select -->
+   
+    <!-- Div below for the maps generated-->
+    <label for="dropdown">ZipCode</label>
+    <select id="dropdown" name="dropdown"></select>
+    <label for="dropdown">Alcohol</label>
+    <select id="dropdown2" name="dropdown"></select>
+    <label for="dropdown">Seating</label>
+    <select id="dropdown3" name="dropdown"></select>
+    <div id="display_list"> </div>
+    <div id="d3-container"> </div>
+    <div id="maps"> </div>
+    <script src="../lib/d3.js"></script>
+    <script src="../lib/d3-array.js"></script>
+    <script src="main.js"></script>
+    <script src="filteredData.js"></script>
+  </body>
+</html>

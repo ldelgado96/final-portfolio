@@ -1,0 +1,42 @@
+.top-section{
+    padding: 40px;
+    font-family: 'Playfair Display', serif;
+    background-color:#f9f9f9;
+    text-align: center;
+}
+
+#container{
+    padding: 20px;
+    border: 2px solid #d3d3d3;
+    border-radius: 30px;
+}
+label{
+    font-family: 'Playfair Display', serif;
+
+}
+#dropdown{
+    flex:auto;
+    width:20%;
+    border:1px solid #d3d3d3;
+    font-size: 16px;
+    font-family:'Playfair Display', serif;
+    
+}
+
+#dropdown2{
+
+    width:20%;
+    border:1px solid #d3d3d3;
+    font-size: 16px;
+    font-family:'Playfair Display', serif;
+    
+}
+
+#dropdown3{
+
+    width:20%;
+    border:1px solid #d3d3d3;
+    font-size: 16px;
+    font-family:'Playfair Display', serif;
+    
+}
